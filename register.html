@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - FoodieBites</title>
+    <link rel="stylesheet" href="login.css">
+    <script>
+        function validateRigisterForm() {
+          var username = document.getElementById("username").value;
+          var password = document.getElementById("password").value;
+          var email = document.getElementById("Email").value;
+          var errorContainer = document.getElementById("error-container");
+          var errorMessage = document.getElementById("error-message");
+  
+          if (username === "" || password === "" || email==="") {
+            errorContainer.style.display = "block";
+            errorMessage.innerHTML = "All fields are required.";
+            return false;
+          } else {
+            errorContainer.style.display = "none";
+          }
+          return true;
+        }
+      </script>
+</head>
+<body>
+    <div class="container">
+        <h2>Register</h2>
+        <form action="db_connect.php" method="POST"  onsubmit=" return validateRigisterForm()">
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" >
+            </div>
+            <div class="form-group">
+              <label for="Email">Email</label>
+              <input type="text" id="Email" name="email" >
+          </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" >
+            </div>
+            <button type="submit">Register</button>
+            <div
+            id="error-container"
+            style="display: none; color: red; text-align: left">
+            <p id="error-message"></p>
+          </div>
+        </form>
+        <p>Already have an account? <a href="login.html">Login here</a></p>
+    </div>
+</body>
+</html>

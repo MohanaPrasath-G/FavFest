@@ -1,0 +1,56 @@
+.btn_cont {
+    text-align: center;
+   /* padding-top: 10px; */
+  
+}
+
+.button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.button.active {
+    background-color: #0056b3;
+}
+
+.food-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* .food-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    width: 250px;
+    text-align: center;
+} */
+
+.food-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.card_cont{
+    background-color: #504b48;
+    padding: 40px 0 80px 0;
+}
+/* .lunch,.dinner{
+    display: none;
+} */
+
+.footer{
+    background-image: url(	https://sun-themes.com/html/fooday/assets/images/background/bg7.jpg);
+    background-size: cover;
+    /* background-image: url(	https://sun-themes.com/html/fooday/assets/images/background/footer-bg.jpg); */
+    height:auto;
+    color:white;
+}
